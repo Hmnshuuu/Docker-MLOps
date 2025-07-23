@@ -1,0 +1,68 @@
+# This command is used to build a Docker image from a Dockerfile
+docker build -t image_name .
+
+# This command is used to run a Docker container from an image
+docker run image_name
+
+# This command is used to run a container in detached mode (in the background)
+docker run -d image_name
+
+# This command is used to run a container and expose a port
+docker run -p host_port:container_port image_name
+
+# This command is used to list all running containers
+docker ps
+
+# This command is used to list all containers (running and stopped)
+docker ps -a
+
+# This command is used to stop a running container
+docker stop container_id
+
+# This command is used to remove a stopped container
+docker rm container_id
+
+# This command is used to list all Docker images
+docker images
+
+# This command is used to remove a Docker image
+docker rmi image_id
+
+# This command is used to pull an image from a Docker registry (like Docker Hub)
+docker pull image_name
+
+# This command is used to push an image to a Docker registry
+docker push image_name
+
+# This command is used to login to a Docker registry
+docker login
+
+# This command is used to log out from the Docker registry
+docker logout
+
+# This command is used to view real-time logs from a running container
+docker logs container_id
+
+# This command is used to execute a command inside a running container
+docker exec -it container_id command
+
+# This command is used to start a stopped container
+docker start container_id
+
+# This command is used to restart a container
+docker restart container_id
+
+# This command is used to create a Docker volume
+docker volume create volume_name
+
+# This command is used to list Docker volumes
+docker volume ls
+
+# This command is used to inspect a Docker image or container
+docker inspect object_name
+
+# This command is used to remove all unused containers, networks, images, and volumes
+docker system prune
+
+# This command is used to tag a Docker image (useful before pushing to a registry)
+docker tag image_name username/repository:tag
